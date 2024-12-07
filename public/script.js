@@ -261,6 +261,12 @@ sendButton.addEventListener("click", async () => {
     displayMessage(geminiResponse, "bot");
 });
 
+userInput.addEventListener("keyup", (event) => {
+  if (event.key === "Enter") {
+      sendButton.click(); // Trigger the send button's click event
+  }
+});
+
 function displayMessage(message, sender) {
     const messageElement = document.createElement("p");
     messageElement.classList.add(sender);

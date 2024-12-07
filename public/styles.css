@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Slightly warmer background */
+}
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.header-image {
+    width: 100%; /* Make image span full width */
+    height: auto;
+    border-top-left-radius: 15px; /* Match container's rounded corners */
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 2em; /* Slightly larger font size */
+}
+
+/* Chatbox Styling */
+#chatbox {
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+
+.user, .bot {
+    margin-bottom: 20px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    clear: both; /* Ensure messages stack properly */
+}
+
+.user {
+    background-color: #FFECB3;
+    float: right; /* Align user messages to the right */
+}
+
+.bot {
+    background-color: #E0F2F7;
+    float: left; /* Align bot messages to the left */
+}
+
+/* Input Area Styling */
+.input-container {
+    display: flex;
+    margin-top: 20px;
+    clear: both; /* Prevent overlap with messages */
+}
+
+#user_input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 5px 0 0 5px;
+}
+
+#send_button {
+    padding: 12px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send_button:hover {
+    background-color: #ffe471;
+}
